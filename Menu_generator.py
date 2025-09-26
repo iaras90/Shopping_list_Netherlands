@@ -6,7 +6,6 @@
 
 #TODO: 
 # Eventually import the shopping lists into an inventory checker. 
-# Fix the issue with dessert remove, as it is currently cuisine remover! And that's not right. 
 
 #Preliminaries: make sure the code works by importing the correct libraries
 #We need to make random choices, so import random
@@ -716,17 +715,17 @@ else:
         print ("\nThe new dessert options for this month are: "+str(dessert_list))
 
         #they should also be able to remove things off the lists
-        cui_remove=input("Would you like to remove anything from the dessert list? Y/N ")
-        cui_remove2=cui_remove.capitalize()
-        while cui_remove2=="Y":
-            cui_input_pop=input("What would you like to remove from the dessert list? ")
-            if cui_input_pop in dessert_list:
-                index=dessert_list.index(cui_input_pop)
+        dess_remove=input("Would you like to remove anything from the dessert list? Y/N ")
+        dess_remove2=cui_remove.capitalize()
+        while dess_remove2=="Y":
+            dess_input_pop=input("What would you like to remove from the dessert list? ")
+            if dess_input_pop in dessert_list:
+                index=dessert_list.index(dess_input_pop)
                 dessert_list.pop(index)
             else: 
                 print("Sorry! This item does not seem to be in the list. Please also check your spelling and capitalisation of this item. ")
-            cui_remove=input("Would you like to remove anything else from the dessert list? Y/N ")
-            cui_remove2=cui_remove.capitalize()
+            dess_remove=input("Would you like to remove anything else from the dessert list? Y/N ")
+            dess_remove2=cui_remove.capitalize()
         else: 
             print("Thank you! Nothing else has been removed from the dessert list.")
         dessert_list.sort()
