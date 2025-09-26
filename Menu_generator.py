@@ -6,6 +6,7 @@
 
 #TODO: 
 # Eventually import the shopping lists into an inventory checker. 
+# Fix the issue with dessert remove, as it is currently cuisine remover! And that's not right. 
 
 #Preliminaries: make sure the code works by importing the correct libraries
 #We need to make random choices, so import random
@@ -1422,3 +1423,4 @@ else:
         print("\nNo shopping lists have been generated. ")
 
     print("\nEnjoy your day!")
+
